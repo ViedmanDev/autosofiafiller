@@ -1,0 +1,66 @@
+{
+  "manifest_version": 3,
+  "name": "AutoSofiaFiller",
+  "description": "Extension para ayudar a autoconpletar formularios a los apoyos de SOFIA PLUS - SENA",
+  "version": "1.0",
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{e7dff44f-4a5c-4a69-989e-cc1b4ed60515}",
+      "strict_min_version": "42.0"
+    }
+  },
+  
+
+  "icons": {
+    "96": "icon-96.png"
+  },
+
+  "page_action": {
+    "default_icon": {
+      "96": "icon-96.png"
+    },
+    "default_popup": "menu.html",
+    "show_matches": ["*://*.google.com/*", "*://*.senasofiaplus.edu.co/*"]
+  },
+
+  "background": {
+    "scripts": [
+        "js/background.js"
+    ]
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.google.com/*", "*://*.senasofiaplus.edu.co/*"],
+      "js": ["js/autofiller.js"]
+    }
+  ],
+    
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "storage",
+    "scripting",
+    "contextMenus",
+    "clipboardRead"
+  ],
+
+  "commands": {
+    "toggle-feature": {
+      "suggested_key": {
+        "default": "Ctrl+Alt+Y",
+        "linux": "Ctrl+Alt+Y"
+      },
+      "description": "Send a 'toggle-feature' event"
+    },
+
+    "repeat-titulada": {
+			"suggested_key": {
+				"default": "Ctrl+Alt+T",
+				"linux": "Ctrl+Alt+T"
+			},
+			"description": "Send a 'toggle-feature' event"
+		}
+  }
+}

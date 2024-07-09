@@ -1,0 +1,52 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "webextensions": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "ecmaVersion": "latest"
+    },
+    "rules": {
+        "indent": [
+            "error",
+            "tab",
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "linebreak-style": [
+            "error",
+            "windows"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "no-unused-vars": "off",
+        "no-multiple-empty-lines": [
+            "error", 
+            { 
+                "max": 2, 
+                "maxEOF": 0
+            }
+        ],
+        "no-use-before-define": [
+            "error"
+        ],
+        "no-var": [
+            "error"
+        ],
+        "camelcase": [
+            "error",
+            {
+                "properties": "never"
+            }
+        ]
+    }
+}

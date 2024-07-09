@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body class="bg-dark">
+    <div class="card bg-dark">
+      	<div class="card-header text-primary-emphasis text-center text-bg-secondary">
+			<h4 >
+				<b class="custom-header-outline">A.S.F - EXTENSION</b>
+			</h4>
+		</div>
+		<div class="card-body text-center">
+			<div class="mb-3">
+				<textarea
+					class="form-control"
+					name="excel_row"
+					id="excel_row"
+					rows="2"
+					placeholder="Pegue aqui la fila del formato excel"
+					autofocus
+				></textarea>
+			</div>
+			<ul class="nav nav-tabs" role="tablist">
+			<li class="nav-item">
+				<div
+					id="menuTitulada"
+					class="btn nav-link rounded-bottom-0"
+					data-bs-toggle="tab"
+					data-bs-target="#titulada-tab-pane"
+				>
+					TITULADA
+				</div>
+			</li>
+			<li class="nav-item">
+				<div
+					id="menuAmt"
+					class="btn nav-link rounded-bottom-0"
+					data-bs-toggle="tab"
+					data-bs-target="#amt-tab-pane"
+				>
+				AMT
+				</div>
+			</li>
+			<li class="nav-item">
+				<div
+					id="menuMisc"
+					class="btn nav-link rounded-bottom-0 disabled"
+					data-bs-toggle="tab"
+					data-bs-target="#misc-tab-pane"
+				>
+				MISC
+				</div>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div
+				class="tab-pane"
+				id="titulada-tab-pane"
+			>
+				<div class="card bg-dark rounded-0">
+					<div class="card-body">
+						<div class="form-group">
+							<div class="mb-3">
+								<button
+									id="eventoTitulada"
+									class="btn btn-secondary w-100"
+								>
+									Creación de Evento Ambiente Reporte SAF
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+				<div
+					class="tab-pane"
+					id="amt-tab-pane"
+				>
+					<div class="card bg-dark rounded-0">
+						<div class="card-body">
+							<div class="form-group">
+								<div id="error" style="display: none;">
+									<p id="error_message">La cadena de caracteres debe llevar el formato correcto y como minimo tener 11 columnas</p>
+								</div>
+								<div id="success" style="display: none;">
+									<p id="success_message">Datos insertados</p>
+								</div>
+								<div class="mb-3">
+									<button
+										id="eventoAmbiente"
+										class="btn btn-secondary w-100"
+									>
+										Creación Evento Ambiente Reporte (Corto) - V1
+									</button>
+								</div>
+								<div class="mb-3">
+									<button
+										id="eventoAmbienteLargo"
+										class="btn btn-secondary w-100"
+									>
+										Creación Evento Ambiente Reporte (Largo) - V2
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div
+					class="tab-pane"
+					id="misc-tab-pane"
+				>
+					<div class="card bg-dark rounded-0">
+						<div class="card-body">
+							<!-- opcion muy beta, necesita mas testeo -->
+							<button
+								id="paso1"
+								class="btn btn-primary"
+							>
+								Completar campos en "Crear nueva disponibilidad" (Agregar informacion del contrato del instructor)
+							</button>
+							<br>
+							<br>
+							<button id="paso3" class="custom-button">Completar campos en "Consultar Consolidado de Necesidades de Empresas"</button>
+							<br>
+							<br>
+							<button id="paso4" class="custom-button">Completar campos en "Ingresar/Modificar Evento de Centro"</button>
+							<br>
+							<br>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card bg-dark rounded-top-0">
+				<div class="card-header text-primary-emphasis text-bg-secondary rounded-top-0">
+					<span class="nav-link">OPCIONES GLOBALES</span>
+				</div>
+				<div class="card-body">
+					<div class="mb-3">
+						<button
+							id="resaltarTextoTablas"
+							class="btn btn-secondary w-100"
+						>
+							Resaltar texto en cualquier tabla Sofia
+						</button>
+					</div>
+					<div class="mb-3">
+						<input
+							type="number"
+							id="mesesAdicionales"
+							placeholder="Meses adicionales"
+							title="Agrega el numero de meses ingresado al mes actual"
+							max="12"
+							class="form-control"
+						>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="card-footer text-center text-bg-secondary text-center">
+			<b class="custom-footer-outline">Alpha V0.2 - Made by BKBX</b>
+		</div>
+    </div>
+    <script src="js/menu.js"></script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+/* etiquetas */
+body {
+    width: 21rem;
+    overflow: hidden;
+    font-family: sans-serif, monospace, Arial, Helvetica, Verdana;
+    user-select: none;
+}
+
+
+/* clases modificadas */
+.nav-link {
+    color: #07db00;
+    font-weight: 550;
+}
+
+.nav-link:hover {
+    color: #fbff00;
+}
+
+.btn-secondary:hover {
+    color: #fbff00;
+    background-color: #6c757d9c;
+}
+
+
+/* custom clases */
+.custom-header-outline {
+    color: rgb(0, 2, 133);
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+.custom-header-outline:hover {
+    color: rgb(0, 2, 133);
+    text-shadow: -1px -1px 0 #fffb00, 1px -1px 0 #fffb00, -1px 1px 0 #fffb00, 1px 1px 0 #fffb00;
+}
+
+.custom-footer-outline {
+    color: rgba(0, 2, 133, 0.288);
+    text-shadow: -1px -1px 0 #fffb00, 1px -1px 0 #0011ff, -1px 1px 0 #0011ff, 1px 1px 0 #0011ff;
+}
+
+
+/* id's */
+#error_message {
+    font-size: 10pt;
+    color: #ff0019;
+}
+
+#success_message {
+    font-size: 10pt;
+    color: #1900ff;
+}

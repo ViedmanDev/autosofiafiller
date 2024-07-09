@@ -1,0 +1,14 @@
+{
+  "name": "autosofiafiller",
+  "version": "0.0.2",
+  "description": "Extension para autocompletar formularios de Sofia plus",
+  "main": "autofiller.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "CEAI",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.50.0"
+  }
+}
